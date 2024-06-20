@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "206488736797",
+    "project_id": "connectframe-7d9ed",
+    "storage_bucket": "connectframe-7d9ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206488736797:android:df3af01aa35bfc3c4062f4",
+        "android_client_info": {
+          "package_name": "com.ConorHinchee.ConnectFrame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1mJ32fG9lOY5vPgPIUBi-X3cEDJ2HqnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
