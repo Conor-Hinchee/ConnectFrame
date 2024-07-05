@@ -1,36 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
-import auth from '@react-native-firebase/auth';
+import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
 
 export default function Index() {
-  // Set an initializing state whilst Firebase connects
-  const [initializing, setInitializing] = useState(true);
-  const [user, setUser] = useState();
-
-  // Handle user state changes
-  function onAuthStateChanged(user) {
-    setUser(user);
-    if (initializing) setInitializing(false);
-  }
+  const [user, setUser] = useState<FirebaseAuthTypes.User | null>(null);
 
   useEffect(() => {
-    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+    // Listens to changes on the auth state
+    const subscriber = auth().onAuthStateChanged((userState) => setUser(userState));
     return subscriber; // unsubscribe on unmount
   }, []);
 
-  if (initializing) return null;
-
-  if (!user) {
-    return (
-      <View>
-        <Text>Login</Text>
-      </View>
-    );
-  }
-
-  return (
-    <View>
-      <Text>Welcome {user.email}</Text>
-    </View>
-  );
+  return <View>{!user ? <Text>Hello</Text> : <Text>Hi</Text>}</View>;
 }

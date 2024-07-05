@@ -12,7 +12,20 @@
           "package_name": "com.ConorHinchee.ConnectFrame"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "206488736797-gqthtiod6jeq5ngn3vutml21k4qavkdi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ConorHinchee.ConnectFrame",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "206488736797-g7ort78gnbmkfl48gr65u9jptkhosqqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD1mJ32fG9lOY5vPgPIUBi-X3cEDJ2HqnU"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206488736797-g7ort78gnbmkfl48gr65u9jptkhosqqt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "206488736797-3nd2n6i7pq4ue317nd7lgqkhbd659q6l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ConorHinchee.ConnectFrame"
+              }
+            }
+          ]
         }
       }
     }
