@@ -2,16 +2,17 @@
   "name": "connectframe",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "start": "expo start",
     "start-android": "npx expo run:android",
     "start-ios": "npx expo run:ios",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "start-db": "supabase start"
   },
   "jest": {
     "preset": "jest-expo"
