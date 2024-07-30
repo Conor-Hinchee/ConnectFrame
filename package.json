@@ -12,7 +12,8 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "start-db": "supabase start"
+    "start-db": "supabase start",
+    "prebuild": "npx expo prebuild"
   },
   "jest": {
     "preset": "jest-expo"
