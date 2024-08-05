@@ -31,10 +31,6 @@ export default function Auth() {
             email: email,
             password: password,
         });
-        // // console.log(email, password);
-
-        console.log(email, password);
-        // console.log(supabase.auth.signInWithPassword)
 
         // TODO HANDLE ERROR
         if (error) Alert.alert(error.message)
@@ -82,12 +78,10 @@ export default function Auth() {
                 <Text style={[styles.welcomeText, styles.mt20]}>CONNECT FRAME</Text>
 
                 <View style={[styles.verticalSpacing, styles.mt20, styles.centered]}>
-                    {/* <Button title="Log In To Get Started" disabled={loading} onPress={openBottomSheet} /> */}
                     <TouchableOpacity onPress={handleLogInRequest}>
                         <Text style={styles.callToAction}>Log In To Get Started</Text>
                     </TouchableOpacity>
 
-                    {/* <Button title="Reset Password" disabled={loading} onPress={openBottomSheet} /> */}
                     <TouchableOpacity onPress={handleResetRequest}>
                         <Text style={styles.callToAction}>Reset Password</Text>
                     </TouchableOpacity>
