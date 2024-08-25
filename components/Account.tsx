@@ -9,13 +9,18 @@ export default function Account({ session }: { session: Session }) {
 
     return (
         <View style={styles.container}>
-            <Text style={[styles.welcomeText, styles.mt20]}>CONNECT FRAME</Text>
-            <Image
+            {/* <Text style={[styles.welcomeText, styles.mt20]}>Welcome User</Text> */}
+            {/* <Text style={[styles.welcomeText, styles.mt20]}>
+                next we need to build a UI for the user to upload imagea and
+                manage the slide shows maybe buttons ??
+
+            </Text> */}
+            {/* <Image
                 style={styles.image}
                 source={{
                     uri: "https://picsum.photos/seed/696/3000/2000",
                 }}
-            />
+            /> */}
             <TouchableOpacity onPress={handleSignOut}>
                 <Text style={styles.callToAction}>Sign Out</Text>
             </TouchableOpacity>

@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '@/utils/supabase'
+import SlideShow from '@/components/SlideShow'
 import Auth from '@/components/Auth'
 import Account from '@/components/Account'
 import { View, AppState } from 'react-native'
 import { Session } from '@supabase/supabase-js'
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // Tells Supabase Auth to continuously refresh the session automatically if
 // the app is in the foreground. When this is added, you will continue to receive
@@ -31,8 +33,10 @@ export default function App() {
   }, [])
 
   return (
-    <View >
-      {session?.user ? <Account key={session.user.id} session={session} /> : <Auth />}
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <SlideShow previewMode />
+      {/* {session?.user ? <Account key={session.user.id} session={session} /> : <Auth />} */}
+    </SafeAreaView>
+
   )
 }
