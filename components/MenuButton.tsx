@@ -11,6 +11,7 @@ export default ({ toggleDialog1 }: { toggleDialog1: () => void }) => {
             icon={{ name: 'menu', color: 'white' }}
             color="green"
             placement="right"
+            onPress={toggleDialog1}
         />
     );
 };
