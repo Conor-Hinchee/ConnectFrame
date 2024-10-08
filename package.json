@@ -12,7 +12,9 @@
     "lint": "expo lint",
     "start-db": "supabase start",
     "prebuild": "npx expo prebuild",
-    "pods": "npx pod-install"
+    "pods": "npx pod-install",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "jest": {
     "preset": "jest-expo"
